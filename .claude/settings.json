@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gmail-send": {
+      "command": "node",
+      "args": ["./gmail-mcp/index.js"]
+    }
+  }
+}
