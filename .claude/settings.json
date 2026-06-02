@@ -1,8 +1,13 @@
 {
   "mcpServers": {
-    "gmail-send": {
-      "command": "node",
-      "args": ["./gmail-mcp/index.js"]
+    "gmail": {
+      "command": "npx",
+      "args": ["-y", "@googleapis/gmail-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "...",
+        "GOOGLE_CLIENT_SECRET": "...",
+        "GOOGLE_REFRESH_TOKEN": "..."
+      }
     }
   }
 }
